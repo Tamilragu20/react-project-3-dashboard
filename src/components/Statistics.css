@@ -1,0 +1,147 @@
+.stats-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.4rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.panel-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.panel-title {
+  margin: 0;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.panel-subtitle {
+  margin: 0.15rem 0 0;
+  font-size: 0.83rem;
+  color: var(--text-muted);
+}
+
+.legend-row {
+  display: flex;
+  gap: 0.9rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+}
+
+.legend-dot.rev {
+  background: var(--accent);
+}
+
+.legend-dot.ord {
+  background: #2563eb;
+}
+
+.bar-chart {
+  height: 185px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.75rem;
+  align-items: end;
+  padding: 1rem 0.5rem 0.75rem;
+  background: var(--bg-canvas);
+  border-radius: 12px;
+}
+
+.bar-group {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.45rem;
+}
+
+.bar-pair {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+}
+
+.bar {
+  width: 14px;
+  border-radius: 5px 5px 0 0;
+  transition: opacity 0.2s ease;
+}
+
+.bar:hover {
+  opacity: 0.85;
+}
+
+.rev-bar {
+  background: var(--accent);
+}
+
+.ord-bar {
+  background: #2563eb;
+}
+
+.bar-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.channels-block {
+  margin-top: 1.35rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--border);
+}
+
+.channels-heading {
+  margin: 0 0 0.85rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.channels-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.channel-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.84rem;
+  margin-bottom: 0.3rem;
+  color: var(--text-secondary);
+}
+
+.channel-track {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.channel-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #10b981);
+  border-radius: 999px;
+}

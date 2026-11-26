@@ -1,0 +1,143 @@
+.activity-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.4rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.activity-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1.15rem;
+}
+
+.status-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.status-chip {
+  padding: 0.32rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-canvas);
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.status-chip.is-active {
+  background: var(--bg-sidebar);
+  border-color: var(--bg-sidebar);
+  color: #ffffff;
+}
+
+.activity-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.activity-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 0.95rem;
+  border-radius: 10px;
+  background: var(--bg-canvas);
+  border: 1px solid var(--border);
+}
+
+.activity-user-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.activity-user {
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.activity-id {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+
+.activity-desc {
+  margin: 0.2rem 0 0;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+}
+
+.activity-meta {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.activity-amount {
+  display: block;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.activity-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.status-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.14rem 0.5rem;
+  border-radius: 999px;
+}
+
+.status-completed {
+  background: var(--accent-soft);
+  color: #065f46;
+}
+
+.status-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-refunded {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.activity-time {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 560px) {
+  .activity-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .activity-meta {
+    text-align: left;
+  }
+
+  .activity-status-row {
+    justify-content: flex-start;
+  }
+}
